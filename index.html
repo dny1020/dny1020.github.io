@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortress of Code</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #f0f6fc;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #ff6b6b;
+        }
+
+        h2 {
+            color: #ff6b6b;
+            font-size: 1.8em;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #21262d;
+            padding-bottom: 5px;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #8b949e;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 3px solid #ff6b6b;
+            background: #161b22;
+        }
+
+        .about-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .about-list li {
+            margin: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .about-list li:before {
+            content: attr(data-icon);
+            position: absolute;
+            left: 0;
+            color: #ff6b6b;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #161b22;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #21262d;
+        }
+
+        th {
+            background: #21262d;
+            color: #f0f6fc;
+            font-weight: bold;
+        }
+
+        .projects {
+            margin: 20px 0;
+        }
+
+        .project {
+            background: #161b22;
+            border: 1px solid #21262d;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: border-color 0.3s;
+        }
+
+        .project:hover {
+            border-color: #ff6b6b;
+        }
+
+        .project a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .principles {
+            background: #161b22;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .principles li {
+            margin: 10px 0;
+            color: #8b949e;
+        }
+
+        .stats {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .stats img {
+            margin: 10px;
+            border-radius: 6px;
+        }
+
+        .contact {
+            background: #161b22;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .contact a {
+            color: #58a6ff;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px 15px 5px 0;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .final-quote {
+            text-align: center;
+            font-style: italic;
+            color: #8b949e;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #21262d;
+        }
+
+        .separator {
+            height: 1px;
+            background: #21262d;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+            }
+            
+            table {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Welcome to My Fortress of Code</h1>
+        <div class="quote">
+            "I don't adapt to the system. I decode it and rewrite it from the shadows."
+        </div>
+
+        <div class="separator"></div>
+
+        <h2>⚔️ Who I Am</h2>
+        <ul class="about-list">
+            <li data-icon="🧬">Engineer of Digital Autonomy</li>
+            <li data-icon="🧠">Eternal learner obsessed with efficiency and raw computational power</li>
+            <li data-icon="🐍">I speak Python, Bash, and Git as native languages</li>
+            <li data-icon="🛡️">Radical self-hosting: my services, my rules</li>
+            <li data-icon="🔒">Privacy and control enthusiast — no compromises</li>
+        </ul>
+
+        <h2>⚙️ Battle Stack</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th>Tools of Choice</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Automation</td>
+                    <td>Python • Bash • Crontab • Docker • Ansible</td>
+                </tr>
+                <tr>
+                    <td>Self-Hosting</td>
+                    <td>Raspberry Pi • Traefik • Vaultwarden • Gitea</td>
+                </tr>
+                <tr>
+                    <td>Web & APIs</td>
+                    <td>FastAPI • Markdown • Nginx • SQLite/PostgreSQL</td>
+                </tr>
+                <tr>
+                    <td>Infrastructure</td>
+                    <td>GitHub Actions • WireGuard • Grafana/Prometheus</td>
+                </tr>
+                <tr>
+                    <td>Git Control</td>
+                    <td>Git CLI • GitHub • GitLab • Gitea</td>
+                </tr>
+                <tr>
+                    <td>Telephony</td>
+                    <td>SBC • Trunks • Asterisk • Avaya</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>📂 Featured Projects</h2>
+        <div class="projects">
+            <div class="project">
+                🔐 <a href="https://github.com/dny1020/vaultwarden-local"><strong>vaultwarden-local</strong></a>: Sovereign password management
+            </div>
+            <div class="project">
+                🌐 <a href="https://github.com/dny1020/fastapi-secure-api"><strong>fastapi-secure-api</strong></a>: Minimalist self-defending API blueprint
+            </div>
+            <div class="project">
+                📊 <a href="https://github.com/dny1020/prometheus-grafana-stack"><strong>prometheus-grafana-stack</strong></a>: Full-service observability system
+            </div>
+        </div>
+
+        <h2>📜 Code Principles</h2>
+        <div class="principles">
+            <ul>
+                <li>✨ <em>Every line of code is an incantation — if it doesn't summon value, I destroy it.</em></li>
+                <li>🧱 <em>Code must endure the test of time.</em></li>
+                <li>🚪 <em>Depending on systems is slavery. I design my own escape doors.</em></li>
+            </ul>
+        </div>
+
+        <h2>📊 War Stats</h2>
+        <div class="stats">
+            <img src="https://github-readme-stats.vercel.app/api?username=dny1020&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats">
+            <br>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dny1020&layout=compact&theme=radical&hide_border=true" alt="Top Languages">
+        </div>
+
+        <h2>🧠 Latest Rituals</h2>
+        <div style="background: #161b22; padding: 20px; border-radius: 6px; text-align: center; color: #8b949e;">
+            <!-- GitHub Activity will appear here if you set up the action -->
+            <em>Activity feed will populate automatically with GitHub Actions</em>
+        </div>
+
+        <h2>🧬 Connect if you have fire in your veins</h2>
+        <div class="contact">
+            🧠 Blog: <a href="https://newsbot.lat">https://newsbot.lat</a><br>
+            📡 Encrypted contact: <a href="mailto:dny@newsbot.lat">dny@newsbot.lat</a><br>
+            🧱 Alt links: Mastodon / GitLab / Matrix / Gitea
+        </div>
+
+        <div class="final-quote">
+            "If you read this and understand nothing, you're probably not the target."<br>
+            <strong>— The Architect of Invisible Systems</strong>
+        </div>
+    </div>
+</body>
+</html>
